@@ -5,7 +5,7 @@ import { Button } from '../conduit-components/src/components/Button/conduit-butt
 import { PieChart } from '../conduit-components/src/components/PieChart/pie-chart';
 import { Modal } from '../conduit-components/src/components/Modal/usa-modal';
 import { ConduitTable } from '../conduit-components/src/components/Table/table';
-import { Accordion } from '../conduit-components/src/components/Accordion2/conduit-accordion';
+import { Accordion } from '../conduit-components/src/components/Accordion/conduit-accordion';
 import { Banner } from '../conduit-components/src/components/Banner/conduit-banner';
 import { Breadcrumb } from '../conduit-components/src/components/Breadcrumb/conduit-breadcrumb';
 import { ButtonGroup } from '../conduit-components/src/components/ButtonGroup/conduit-button-group';
