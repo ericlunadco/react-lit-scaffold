@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "cd src && npm i && cd src/conduit-components && npm i && cd src && npm i && gulp build && cd ../../ && vite",
+    "dev": "cd src && npm i && cd src/conduit-components && npm i && cd src && npm i && gulp build && cd ../../../ && vite",
     "init-build": "cd src/conduit-components/src && npm install && gulp build",
     "build": "vite build",
     "lint": "eslint .",
