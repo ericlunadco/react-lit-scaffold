@@ -1,9 +1,10 @@
 import { LitElement, html } from 'lit';
 import { property, customElement } from 'lit/decorators.js';
 import { styles as style } from './styles/Banner.js';
-import UsaFlag from '../../node_modules/@uswds/uswds/packages/usa-banner/src/img/us_flag_small.png';
-import IconDotGov from '../../node_modules/@uswds/uswds/dist/img/icon-dot-gov.svg';
-import IconHttps from '../../node_modules/@uswds/uswds/dist/img/icon-https.svg';
+
+import UsaFlag from '../../../../../node_modules/@uswds/uswds/packages/usa-banner/src/img/us_flag_small.png';
+import IconDotGov from '../../../../../node_modules/@uswds/uswds/dist/img/icon-dot-gov.svg';
+import IconHttps from '../../../../../node_modules/@uswds/uswds/dist/img/icon-https.svg';
 @customElement('conduit-banner')
 export class Banner extends LitElement {
   @property({ type: String }) bannertype = 'gov';
