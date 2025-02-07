@@ -1,0 +1,24 @@
+@forward "../../../global/uswds-config";
+@import "../../../global/global";
+@import "../../../global/global-colors";
+@import "../../../node_modules/@uswds/uswds/packages/usa-accordion/index";
+@import "../../../node_modules/@uswds/uswds/packages/usa-banner/index";
+
+
+.usa-banner .grid-row.grid-gap-lg {
+    margin-left: -.75rem;
+    margin-right: -.75rem;
+}
+.usa-banner__content {
+    width: auto !important;
+}
+.grid-row.grid-gap-lg {
+    margin-left: -.75rem !important;
+    margin-right: -.75rem !important;
+}
+@media screen and (min-width: 768px) {
+    .usa-banner__guidance {
+        width: 50%;
+    }
+}
+
