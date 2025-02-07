@@ -9,9 +9,9 @@
 /node_modules/
 /npm-debug.log
 /src/node_modules/
-/src/*/**/*.css
-/src/components/**/styles/*.ts
-/src/components/**/styles/*.js
+# /src/*/**/*.css
+# /src/components/**/styles/*.ts
+# /src/components/**/styles/*.js
 
 
 ## testing
