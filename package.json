@@ -19,8 +19,7 @@
     "classnames": "^2.5.1",
     "gulp-rename": "^2.0.0",
     "lit": "^3.1.2",
-    "@types/d3": "^7.4.3",
-    "d3": "^7.9.0"
+    "@ericlunadco/conduit-package": "0.0.13"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",

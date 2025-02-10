@@ -1,51 +1,51 @@
 import { createComponent } from '@lit/react';
 import * as React from 'react';
-import { Alert } from '../conduit-components/src/components/Alerts/conduit-alert';
-import { Button } from '../conduit-components/src/components/Button/conduit-button';
-import { PieChart } from '../conduit-components/src/components/PieChart/pie-chart';
-import { Modal } from '../conduit-components/src/components/Modal/usa-modal';
-import { ConduitTable } from '../conduit-components/src/components/Table/table';
-// import { Accordion } from '../conduit-components/src/components/Accordion/conduit-accordion';
-import { Banner } from '../conduit-components/src/components/Banner/conduit-banner';
-import { Breadcrumb } from '../conduit-components/src/components/Breadcrumb/conduit-breadcrumb';
-import { ButtonGroup } from '../conduit-components/src/components/ButtonGroup/conduit-button-group';
-import { ConduitCard as Card } from '../conduit-components/src/components/Card/conduit-card';
-import { CharacterCount } from '../conduit-components/src/components/CharacterCount/conduit-character-count';
-import { Checkbox } from '../conduit-components/src/components/Checkbox/conduit-checkbox';
-import { Collection } from '../conduit-components/src/components/Collection/conduit-collection';
-import { ComboBox } from '../conduit-components/src/components/ComboBox/conduit-combo-box';
-import { DatePicker } from '../conduit-components/src/components/DatePicker/conduit-date-picker';
-import { DateRangePicker } from '../conduit-components/src/components/DateRangePicker/conduit-date-range-picker';
-import { FileInput } from '../conduit-components/src/components/FileInput/conduit-file-input';
-import { Footer } from '../conduit-components/src/components/Footer/conduit-footer';
-import { Form } from '../conduit-components/src/components/Form/conduit-form';
-import { Grid } from '../conduit-components/src/components/Grid/conduit-grid';
-import { Header } from '../conduit-components/src/components/Header/conduit-header';
-import { Icon } from '../conduit-components/src/components/Icon/conduit-icon';
-import { IconList } from '../conduit-components/src/components/IconList/conduit-icon-list';
-import { Identifier } from '../conduit-components/src/components/Identifier/conduit-identifier';
-import { InPageNavigation } from '../conduit-components/src/components/InPageNavigation/conduit-in-page-navigation';
-import { InputMask } from '../conduit-components/src/components/InputMask/conduit-input-mask';
-import { InputPrefix } from '../conduit-components/src/components/InputPrefix/conduit-input-prefix';
-import { LanguageSelector } from '../conduit-components/src/components/LanguageSelector/conduit-language-selector';
-import { LineGraph as LineChart } from '../conduit-components/src/components/LineChart/line-chart.ts';
-import { Link } from '../conduit-components/src/components/Link/conduit-link';
-import { List } from '../conduit-components/src/components/List/conduit-list';
-import { MemorableDate } from '../conduit-components/src/components/MemorableDate/conduit-memorable-date';
-import { Pagination } from '../conduit-components/src/components/Pagination/conduit-pagination';
-import { ProcessList } from '../conduit-components/src/components/ProcessList/conduit-process-list';
-import { Prose } from '../conduit-components/src/components/Prose/conduit-prose';
-import { RadioButtons } from '../conduit-components/src/components/RadioButtons/conduit-radio-buttons';
-import { Search } from '../conduit-components/src/components/Search/conduit-search';
-import { Select } from '../conduit-components/src/components/Select/conduit-select';
-import { Sidenav } from '../conduit-components/src/components/Sidenav/conduit-sidenav';
-import { Summary } from '../conduit-components/src/components/Summary/conduit-summary';
-import { Tag } from '../conduit-components/src/components/Tag/conduit-tag';
-import { TextArea } from '../conduit-components/src/components/TextArea/conduit-text-area';
-import { TimePicker } from '../conduit-components/src/components/TimePicker/conduit-time-picker';
-import { Tooltip } from '../conduit-components/src/components/Tooltip/conduit-tooltip';
-import { ValidationMessage } from '../conduit-components/src/components/ValidationMessage/conduit-validation-message';
-
+import {
+  Alert,
+  Button,
+  PieChart,
+  Modal,
+  Table,
+  Banner,
+  Breadcrumb,
+  ButtonGroup,
+  ConduitCard as Card,
+  CharacterCount,
+  Checkbox,
+  Collection,
+  ComboBox,
+  DatePicker,
+  DateRangePicker,
+  FileInput,
+  Footer,
+  Form,
+  Grid,
+  Header,
+  Icon,
+  IconList,
+  Identifier,
+  InPageNavigation,
+  InputMask,
+  InputPrefix,
+  LanguageSelector,
+  LineGraph as LineChart,
+  Link,
+  List,
+  MemorableDate,
+  Pagination,
+  ProcessList,
+  Prose,
+  RadioButtons,
+  Search,
+  Select,
+  Sidenav,
+  Summary,
+  Tag,
+  TextArea,
+  TimePicker,
+  Tooltip,
+  ValidationMessage
+} from '@ericlunadco/conduit-package';
 
 export const BannerComponent = createComponent({
   tagName: 'conduit-banner',
@@ -307,6 +307,6 @@ export const ModalComponent = createComponent({
 
 export const TableComponent = createComponent({
   tagName: 'conduit-table',
-  elementClass: ConduitTable,
+  elementClass: Table,
   react: React,
 });
