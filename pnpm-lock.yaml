@@ -8,7 +8,7 @@ importers:
 
   .:
     dependencies:
-      '@ericlunadco/conduit-package':
+      '@intellibridge/conduit-package':
         specifier: 0.0.13
         version: 0.0.13
       '@lit/react':
@@ -154,9 +154,6 @@ packages:
 
   '@bufbuild/protobuf@2.2.3':
     resolution: {integrity: sha512-tFQoXHJdkEOSwj5tRIZSPNUuXK3RaR7T1nUrPgbYX1pUbvqqaaZAsfo+NXBPsz5rZMSKVFrgK1WL8Q/MSLvprg==}
-
-  '@ericlunadco/conduit-package@0.0.13':
-    resolution: {integrity: sha512-vo5N3/zDZIfmeSSYawnCZKmMkLR/UfUGcIJv7zaQ0NLP8J+szc5bwu1y5utTeJmbY4qD8SDYBcAN0gSKGCyQ1g==, tarball: https://npm.pkg.github.com/download/@ericlunadco/conduit-package/0.0.13/58cd900782d20d78608f02cb6726d79490c40fd4}
 
   '@esbuild/aix-ppc64@0.21.5':
     resolution: {integrity: sha512-1SDgH6ZSPTlggy1yI6+Dbkiz8xzpHJEVAlF/AM1tHPLsf5STom9rwtjE4hKAF20FfXXNTFqEYXyJNWh1GiZedQ==}
@@ -349,6 +346,9 @@ packages:
   '@humanwhocodes/retry@0.4.1':
     resolution: {integrity: sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==}
     engines: {node: '>=18.18'}
+
+  '@intellibridge/conduit-package@0.0.13':
+    resolution: {integrity: sha512-NzR1e9mAYgj0w9ZhiW0IYJjSq/UcxcTtKaXF7pr2t7poaP+IHTV9vpGiauew8WwKaa7wraC59Fy+nca3Ncj0ZQ==}
 
   '@jridgewell/gen-mapping@0.3.8':
     resolution: {integrity: sha512-imAbBGkb+ebQyxKgzv5Hu2nmROxoDOXHh80evxdoXNOrvAnVx7zimzc1Oo5h9RlfV4vPXaE2iM5pOFbvOCClWA==}
@@ -1947,13 +1947,6 @@ snapshots:
   '@bufbuild/protobuf@2.2.3':
     optional: true
 
-  '@ericlunadco/conduit-package@0.0.13':
-    dependencies:
-      '@types/d3': 7.4.3
-      '@uswds/uswds': 3.11.0
-      d3: 7.9.0
-      lit: 3.2.1
-
   '@esbuild/aix-ppc64@0.21.5':
     optional: true
 
@@ -2077,6 +2070,13 @@ snapshots:
   '@humanwhocodes/retry@0.3.1': {}
 
   '@humanwhocodes/retry@0.4.1': {}
+
+  '@intellibridge/conduit-package@0.0.13':
+    dependencies:
+      '@types/d3': 7.4.3
+      '@uswds/uswds': 3.11.0
+      d3: 7.9.0
+      lit: 3.2.1
 
   '@jridgewell/gen-mapping@0.3.8':
     dependencies:
