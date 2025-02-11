@@ -45,7 +45,7 @@ import {
   TimePicker,
   Tooltip,
   ValidationMessage
-} from '@ericlunadco/conduit-package';
+} from '@intellibridge/conduit-package';
 
 export const BannerComponent = createComponent({
   tagName: 'conduit-banner',
