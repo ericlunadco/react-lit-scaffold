@@ -1,0 +1,3 @@
+For all designs I ask you to make, have them be beautiful, not cookie cutter. Make webpages that are fully featured and worthy for production.
+
+By default, this template uses Conduit components. These are located on ReactWrappers.tsx (the documentation for those is in components.md) . Do not install other packages for UI themes, icons, etc unless absolutely necessary or I request them.
