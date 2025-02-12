@@ -47,7 +47,6 @@ A combination of a dropdown list and input field.
   interface ComboBoxOption {
     value: string;     // The option's value
     label: string;     // The option's display text
-    disabled?: boolean; // Whether the option is disabled
   }
   ```
 - `value`: string - Current selected value
@@ -135,10 +134,9 @@ A combination of a dropdown list and input field.
 - `items`: Array of navigation items where each item has:
   ```typescript
   interface SidenavItem {
-    text: string;       // Display text
-    href?: string;      // Optional link URL
-    current?: boolean;  // Whether this is the current page
-    children?: SidenavItem[]; // Optional nested items
+    id: string;
+    label: string;
+    icon?: string;
   }
   ```
 - `expanded`: Boolean to control expanded state
@@ -194,19 +192,20 @@ A combination of a dropdown list and input field.
 - `ariadisabled`: boolean (default: false) - Whether ARIA is disabled
 
 ### Footer
-- `links`: Array<FooterLink> - Array of footer navigation links
-  ```typescript
-  interface FooterLink {
-    text: string;      // Link text
-    href: string;      // Link URL
-  }
-  ```
+A comprehensive footer component with navigation links, social media, contact information, and optional sign-up section.
+- `primaryLinks`: Array<FooterLink> - Array of primary navigation links
+- `secondaryLinks`: Array<FooterLink> - Array of secondary navigation links
 - `socialLinks`: Array<SocialLink> - Array of social media links
-  ```typescript
-  interface SocialLink extends FooterLink {
-    icon: string;      // Icon name for the social link
-  }
-  ```
+- `logo`: string - URL for the footer logo
+- `logoAlt`: string - Alt text for the logo
+- `heading`: string - Footer heading text
+- `returnToTop`: string (default: 'Return to top') - Text for the return to top link
+- `signUpText`: string - Text for the sign-up section
+- `signUpButtonText`: string (default: 'Sign up') - Text for the sign-up button
+- `agencyName`: string - Agency name text
+- `contactCenter`: string - Contact center text
+- `contactEmail`: string - Contact email address
+- `contactPhone`: string - Contact phone number
 
 ### Grid
 - `gap`: number | string - Gap between grid items (0, '2px', '05', 1-6, 'sm', 'md', 'lg')
@@ -613,15 +612,29 @@ The table supports:
 ### Using Footer
 ```html
 <conduit-footer
-  .links=${[
+  .primaryLinks=${[
     { text: 'About', href: '/about' },
-    { text: 'Contact', href: '/contact' },
-    { text: 'Privacy', href: '/privacy' }
+    { text: 'Services', href: '/services' },
+    { text: 'Contact', href: '/contact' }
+  ]}
+  .secondaryLinks=${[
+    { text: 'Privacy Policy', href: '/privacy' },
+    { text: 'Terms of Service', href: '/terms' }
   ]}
   .socialLinks=${[
     { text: 'Twitter', href: 'https://twitter.com', icon: 'twitter' },
     { text: 'LinkedIn', href: 'https://linkedin.com', icon: 'linkedin' }
   ]}
+  logo="path/to/logo.png"
+  logoAlt="Agency Logo"
+  heading="About Us"
+  returnToTop="Return to Top"
+  signUpText="Join our newsletter for updates"
+  signUpButtonText="Sign Up"
+  agencyName="Government Agency"
+  contactCenter="(555) 123-4567"
+  contactEmail="info@agency.gov"
+  contactPhone="+1 (555) 123-4567"
 ></conduit-footer>
 ```
 
